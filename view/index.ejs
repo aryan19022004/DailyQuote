@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+      .container{
+        position: relative;
+        left: 230px;
+        top: 180px;
+        height: 350px;
+        width: 1000px;
+        border: 2px solid gold;
+        border-radius: 25px;
+        background-color: rgb(11, 151, 215);
+        box-sizing: border-box;
+        padding: 5px;
+      }
+      .form{
+        display: inline-block;
+      }
+      .submit{
+        display: inline-block;
+        height: 40px;
+        width: 100px;
+        border: 2px solid rgb(77, 10, 10);
+        color:white;
+        font-size: 12px;
+        letter-spacing: 1px;
+        background-color: rgb(192, 127, 42);
+        border-radius: 15px;
+      }
+      .second{
+        position: relative;
+        left: 380px;
+       /* border: 2px solid red;*/
+        width: 200px ;
+        display: flex;
+        justify-content: space-between;
+        margin-top:4px ;
+      }
+      .first{
+        width: 100%;
+        height: 290px;
+        box-sizing: border-box;
+       /* border: 2px solid black;*/
+        border-radius: 25px;
+        /*background-color: darksalmon;*/
+        color: rgb(242, 238, 234);
+        /*box-sizing: border-box;*/
+        padding: 5px;
+      }
+     /* .tweet{
+        font-size: 10px;
+        border: 1px solid black;
+        background-color: gold;
+        letter-spacing: 3px;
+        border-radius: 15px;
+      }*/
+   /*   <!-- HTML !-->
+<button class="button-17" role="button">Button 17</button>
+
+/* CSS */
+.tweet {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+}
+
+.tweet:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.tweet:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.tweet:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.tweet:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.tweet:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.tweet:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.tweet:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.tweet:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+    
+.submit{
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  /*font-size: 16px;*/
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size: 9px;
+}
+
+.submit:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+  cursor: pointer;
+}
+.aurthor{
+    position: relative;
+   left: 600px;
+    width: 300px;
+    font-size: 30px;
+    box-sizing: border-box;
+    
+    height: 50px;
+}
+.aurthor2{
+    font-size: 25px;
+}
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+            <h1><span>quote: </span><span class="quote"><%=randomQuote.quote%></span><h1>
+                <div class="aurthor">
+                    <h1 class="aurthor2"><span class="aurthor2">~</span><span class="aurthor2"><%=randomQuote.author%></span></h1>
+                </div>
+               
+        </div>
+       
+            <dicv class="second">
+                <form method="get" action="/quote"  class="form">
+                    <button class="submit" type="submit">New QUOTE</button>
+                </form>
+            
+                <button onclick="tweet()" class="tweet">tweet</button>
+            </dicv>
+           
+    </div>
+   
+ 
+    <script>
+     function tweet(){
+        const quote = "<%= randomQuote.quote %>";
+      window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent(quote)) }
+    
+    </script>
+</body>
+</html>
